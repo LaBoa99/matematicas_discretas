@@ -93,14 +93,17 @@ class MasterAritmeticAccountant(ArimeticAccountant):
             print("Master: ", numbers)
 
         result = self.cast_to_nines(numbers[0])
-        print("R=", result)
+        return result
             
 
 a = ArimeticAccountant()
 m = MasterAritmeticAccountant()
+
 operation = "492 * 61 + 2983"
-print("Accountant = ", a.init(operation), m.cast_to_nines(a.init(operation)))
-m.init(operation)
+accountant_result = a.init(operation)
+print("Accountant Result = ", accountant_result)
+master_result = m.init(operation)
+print("Master Result (Nines) =", master_result, "Accountant Result (Nines) =", m.cast_to_nines(accountant_result))
         
 
         
