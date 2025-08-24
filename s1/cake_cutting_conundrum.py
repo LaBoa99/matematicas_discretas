@@ -18,6 +18,3 @@ def cake_cutting_conundrum(points: int) -> int:
     count_lines = combinations_whitout_repeat(points, 2)
     count_interceptions = combinations_whitout_repeat(points, 4) if points > 3 else 0
     return count_lines + count_interceptions + 1
-
-for i in range(1, 8):
-    print(i, cake_cutting_conundrum(i))
