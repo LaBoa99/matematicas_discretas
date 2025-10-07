@@ -31,4 +31,6 @@ def is_prime_three(n: int) -> bool:
     print(n, True, True)
     print(n, "is prime")
 
-is_prime_three(12497)
+#is_prime_one(12497)+
+is_prime_two(12497)
+#is_prime_three(12497)
