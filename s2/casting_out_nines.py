@@ -7,4 +7,4 @@ def casting_out_nines(n: int) -> int:
         k = digits_sum
     return k == 3 or k == 6 or k == 9
 
-print(casting_out_nines(87466))
+print(casting_out_nines(9217))
